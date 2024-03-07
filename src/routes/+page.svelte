@@ -9,7 +9,7 @@
 <div class="container w-full mx-auto flex justify-center items-center">
 	<div>
 		<h1 class="h1 m-5 text-center">Welcome to ulong32.net!</h1>
-		<h3 class="text-center h3 text-center">ulong32.netへようこそ!</h3>
+		<h3 class="h3 text-center">ulong32.netへようこそ!</h3>
 		<div class="text-token w-full p-4">
 			<nav class="list-nav">
 				<ul class="card">
