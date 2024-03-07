@@ -5,7 +5,7 @@
 <div class="container w-full mx-auto flex-col justify-center items-center text-center">
 	<div class="p-4">
 		<h1 class="h1">Links</h1>
-		<h3 class="h3 opacity-80">各種SNSへのリンク</h3>
+		<h3 class="h3 opacity-80">各種サイトへのリンク</h3>
 	</div>
 
 	<div class="text-token p-4 text-xl">

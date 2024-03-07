@@ -39,7 +39,7 @@
 							<span class="i-lucide-link w-6 h-6"></span>
 							<span class="flex-auto flex-col">
 								<div style="margin:0px; padding:0px;">Links</div>
-								<div style="margin:0px; padding:0px;" class="opacity-75">各種SNSへのリンク</div>
+								<div style="margin:0px; padding:0px;" class="opacity-75">各種サイトへのリンク</div>
 							</span>
 							<span class="i-tabler-arrow-right w-6 h-6"></span>
 						</a>
