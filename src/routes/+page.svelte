@@ -15,7 +15,7 @@
 				<ul class="card">
 					<header class="card-header h2 text-center m-6">Contents</header>
 					<li>
-						<a href="/about">
+						<a href="./about">
 							<span class="i-lucide-user-round w-6 h-6"></span>
 							<span class="flex-auto flex-col">
 								<div style="margin:0px; padding:0px;">About</div>
@@ -25,7 +25,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="/tools">
+						<a href="./tools">
 							<span class="i-tabler-hammer w-6 h-6"></span>
 							<span class="flex-auto flex-col">
 								<div style="margin:0px; padding:0px;">Tools</div>
@@ -35,7 +35,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="/links">
+						<a href="./links">
 							<span class="i-lucide-link w-6 h-6"></span>
 							<span class="flex-auto flex-col">
 								<div style="margin:0px; padding:0px;">Links</div>
