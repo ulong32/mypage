@@ -1,8 +1,11 @@
+<script>
+	import { fade } from "svelte/transition";
+</script>
 <svelte:head>
 	<title>Links - ulong32.net</title>
 	<meta property="og:title" content="Links - ulong32.net" />
 </svelte:head>
-<div class="container w-full mx-auto flex-col justify-center items-center text-center">
+<div class="container w-full mx-auto flex-col justify-center items-center text-center" in:fade={{ delay: 200 }}>
 	<div class="p-4">
 		<h1 class="h1">Links</h1>
 		<h3 class="h3 opacity-80">各種サイトへのリンク</h3>
@@ -12,7 +15,7 @@
 		<nav class="list-nav">
 			<ul class="list card">
 				<li>
-					<a href="https://twitter.com/nagisan_2nd" target="_blank" class="w-full">
+					<a href="https://twitter.com/i/user/1023554612127625216" target="_blank" class="w-full">
 						<span class="i-tabler-brand-twitter w-6 h-6"></span>
 						<span class="flex-auto text-left">Twitter</span>
 						<span class="i-tabler-arrow-right w-6 h-6"></span>

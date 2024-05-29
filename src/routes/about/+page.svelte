@@ -1,4 +1,5 @@
 <script>
+	import { fade } from "svelte/transition";
 </script>
 
 <svelte:head>
@@ -6,7 +7,7 @@
 	<meta property="og:title" content="About - ulong32.net" />
 </svelte:head>
 
-<div class="container w-full mx-auto flex-col justify-center items-center">
+<div class="container w-full mx-auto flex-col justify-center items-center" in:fade={{ delay: 200 }}>
 	<div class="p-4 text-center">
 		<h1 class="h1">About</h1>
 		<h3 class="h3 opacity-80">私について</h3>

@@ -3,6 +3,7 @@
 	import '../app.postcss';
 	import { AppBar } from '@skeletonlabs/skeleton';
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -25,19 +26,19 @@
 			</div>
 		</span>
 		-->
-		<a href="./about" class="flex-col justify-center">
+		<a href="{base}/about" class="flex-col justify-center">
 			<div class="flex justify-center">
 				<span class="i-lucide-user-round w-6 h-6"></span>
 			</div>
 			<div class="text-sm">About</div>
 		</a>
-		<a href="./tools" class="flex-col justify-center">
+		<a href="{base}/tools" class="flex-col justify-center">
 			<div class="flex justify-center">
 				<span class="i-tabler-hammer w-6 h-6"></span>
 			</div>
 			<div class="text-sm">Tools</div>
 		</a>
-		<a href="./links" class="flex-col justify-center">
+		<a href="{base}/links" class="flex-col justify-center">
 			<div class="flex justify-center">
 				<span class="i-lucide-link w-5 h-6"></span>
 			</div>

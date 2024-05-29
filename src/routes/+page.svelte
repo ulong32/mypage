@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { base } from "$app/paths";
+	import { fade } from "svelte/transition";
 </script>
 
 <svelte:head>
@@ -6,7 +8,7 @@
 	<meta property="og:title" content="Home - ulong32.net" />
 </svelte:head>
 
-<div class="container w-full mx-auto flex justify-center items-center">
+<div class="container w-full mx-auto flex justify-center items-center" in:fade={{ delay: 200 }}>
 	<div>
 		<h1 class="h1 m-5 text-center">Welcome to ulong32.net!</h1>
 		<h3 class="h3 text-center">ulong32.netへようこそ!</h3>
@@ -15,7 +17,7 @@
 				<ul class="card">
 					<header class="card-header h2 text-center m-6">Contents</header>
 					<li>
-						<a href="./about">
+						<a href="{base}/about">
 							<span class="i-lucide-user-round w-6 h-6"></span>
 							<span class="flex-auto flex-col">
 								<div style="margin:0px; padding:0px;">About</div>
@@ -25,7 +27,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="./tools">
+						<a href="{base}/tools">
 							<span class="i-tabler-hammer w-6 h-6"></span>
 							<span class="flex-auto flex-col">
 								<div style="margin:0px; padding:0px;">Tools</div>
@@ -35,7 +37,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="./links">
+						<a href="{base}/links">
 							<span class="i-lucide-link w-6 h-6"></span>
 							<span class="flex-auto flex-col">
 								<div style="margin:0px; padding:0px;">Links</div>

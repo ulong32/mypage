@@ -3,6 +3,7 @@
     <meta property="og:title" content="Tools - ulong32.net">
 </svelte:head>
 <script lang="ts">
+	import { fade } from "svelte/transition";
 	const services = [
 		{
 			name: 'allb_News',
@@ -52,16 +53,27 @@
 			description: 'ワールドダイスター登場キャラの誕生日をエクスポートできるツール',
 			links: [
 				{
-					icon: 'i-lucide-link w-5 h-5',
+					icon: 'i-lucide-link w-6 h-6',
 					description: 'Webサイト',
 					destination: 'https://ulong32.net/wds_bddownloader/'
+				}
+			]
+		},
+		{
+			name: "アイプリバースアルバムダウンローダー",
+			description: "アイプリ マイキャラルームのアルバム画像をダウンロードできるツール",
+			links: [
+				{
+					icon: "i-lucide-chrome w-5 h-5",
+					description: "Chrome ウェブストア",
+					destination: "https://chrome.google.com/webstore/detail/meogmfoncolnmjnkpedhmfbbajmcdfng"
 				}
 			]
 		}
 	];
 </script>
 
-<div class="container mx-auto flex-col justify-center items-center text-center max-w-max">
+<div class="container mx-auto flex-col justify-center items-center text-center max-w-max" in:fade={{ delay: 200 }}>
 	<div class="p-4">
 		<h1 class="h1">Tools</h1>
 		<h2 class="h3 opacity-80">今までに作ったツールなど</h2>
