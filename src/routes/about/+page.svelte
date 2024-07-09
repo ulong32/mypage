@@ -10,7 +10,7 @@
 <div class="container w-full mx-auto flex-col justify-center items-center" in:fade={{ delay: 200 }}>
 	<div class="p-4 text-center">
 		<h1 class="h1">About</h1>
-		<h3 class="h3 opacity-80">私について</h3>
+		<div class="h3 opacity-80">私について</div>
 	</div>
 
 	<div class="card m-6 p-4">
@@ -18,7 +18,7 @@
 			<div class="flex justify-center p-4">
 				<img src="/images/icon.png" class="rounded-full aspect-square" alt="アイコン" />
 			</div>
-			<div class="flex-auto text-lg">
+			<div class="text-lg">
 				<ul class="list">
 					<li class="my-2">
 						<span class="flex-auto text-lg">Name</span>

@@ -76,7 +76,7 @@
 <div class="container mx-auto flex-col justify-center items-center text-center max-w-max" in:fade={{ delay: 200 }}>
 	<div class="p-4">
 		<h1 class="h1">Tools</h1>
-		<h2 class="h3 opacity-80">今までに作ったツールなど</h2>
+		<div class="h3 opacity-80">今までに作ったツールなど</div>
 	</div>
 
 	{#each services as s}

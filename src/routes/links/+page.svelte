@@ -8,10 +8,10 @@
 <div class="container w-full mx-auto flex-col justify-center items-center text-center" in:fade={{ delay: 200 }}>
 	<div class="p-4">
 		<h1 class="h1">Links</h1>
-		<h3 class="h3 opacity-80">各種サイトへのリンク</h3>
+		<div class="h3 opacity-80">各種サイトへのリンク</div>
 	</div>
 
-	<div class="text-token p-4 text-xl">
+	<div class="p-4 text-xl">
 		<nav class="list-nav">
 			<ul class="list card">
 				<li>
