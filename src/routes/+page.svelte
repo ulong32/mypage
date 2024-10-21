@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { base } from "$app/paths";
-	import { fade } from "svelte/transition";
+	import { blur } from "svelte/transition";
+	import { quadOut } from "svelte/easing";
 </script>
 
 <svelte:head>
@@ -8,10 +9,12 @@
 	<meta property="og:title" content="Home - ulong32.net" />
 </svelte:head>
 
-<div class="container w-full mx-auto flex justify-center items-center" in:fade={{ delay: 200 }}>
+<div class="container w-full mx-auto flex justify-center items-center">
 	<div>
-		<h1 class="h1 m-5 text-center">Welcome to ulong32.net!</h1>
-		<div class="h3 text-center">ulong32.netへようこそ!</div>
+		<div in:blur={{delay:100, duration:600, easing:quadOut}}>
+			<h1 class="h1 m-5 text-center">Welcome to ulong32.net!</h1>
+			<div class="h3 text-center">ulong32.netへようこそ!</div>
+		</div>
 		<div class="text-token w-full p-4">
 			<nav class="list-nav">
 				<ul class="card">

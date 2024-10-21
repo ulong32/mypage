@@ -1,12 +1,15 @@
-<script>
-	import { fade } from "svelte/transition";
+<script lang="ts">
+	import { blur } from "svelte/transition";
+	import { quadOut } from "svelte/easing";
 </script>
+
 <svelte:head>
 	<title>Links - ulong32.net</title>
 	<meta property="og:title" content="Links - ulong32.net" />
 </svelte:head>
-<div class="container w-full mx-auto flex-col justify-center items-center text-center" in:fade={{ delay: 200 }}>
-	<div class="p-4">
+
+<div class="container w-full mx-auto flex-col justify-center items-center text-center">
+	<div class="p-4" in:blur={{delay:100, duration:600, easing:quadOut}}>
 		<h1 class="h1">Links</h1>
 		<div class="h3 opacity-80">各種サイトへのリンク</div>
 	</div>

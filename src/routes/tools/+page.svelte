@@ -3,7 +3,8 @@
     <meta property="og:title" content="Tools - ulong32.net">
 </svelte:head>
 <script lang="ts">
-	import { fade } from "svelte/transition";
+	import { blur } from "svelte/transition";
+	import { quadOut } from "svelte/easing";
 	const services = [
 		{
 			name: 'allb_News',
@@ -73,8 +74,8 @@
 	];
 </script>
 
-<div class="container mx-auto flex-col justify-center items-center text-center max-w-max" in:fade={{ delay: 200 }}>
-	<div class="p-4">
+<div class="container mx-auto flex-col justify-center items-center text-center max-w-max">
+	<div class="p-4" in:blur={{delay:100, duration:600, easing:quadOut}}>
 		<h1 class="h1">Tools</h1>
 		<div class="h3 opacity-80">今までに作ったツールなど</div>
 	</div>
