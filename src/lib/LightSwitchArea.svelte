@@ -1,6 +1,6 @@
 <script lang="ts">
     import { LightSwitch } from "@skeletonlabs/skeleton";
-    let isShowLightSwitch = true;
+    let isShowLightSwitch = false;
 </script>
 <div class="fixed right-0 bottom-0 bg-gray-400 bg-opacity-30 backdrop-blur-sm bg-sla m-1.5 p-1.5 rounded transition-all duration-200"
      class:!-right-16={!isShowLightSwitch}

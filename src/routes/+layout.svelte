@@ -9,9 +9,6 @@
 	import LightSwitchArea from '$lib/LightSwitchArea.svelte';
 
 	let titleOnHover = false;
-	let aboutOnHover = false;
-	let toolsOnHover = false;
-	let linksOnHover = false;
 </script>
 
 <svelte:head>
@@ -28,12 +25,9 @@
 
 	<svelte:fragment slot="trail">
 		<a href="{base}/about"
-			class="flex-col justify-center p-1 transition-all duration-200"
+			class="flex-col justify-center p-1 transition-all duration-200 hover:scale-105"
 			class:activePageDark={$page.url.pathname.endsWith("about/") && $modeCurrent == false}
 			class:activePageLight={$page.url.pathname.endsWith("about/") && $modeCurrent == true}
-			on:mouseenter={() => {aboutOnHover = true}}
-			on:mouseleave={() => {aboutOnHover = false}}
-			class:scale-105={aboutOnHover}
 		>
 			<div class="flex justify-center">
 				<span class="i-lucide-user-round w-6 h-6"></span>
@@ -41,12 +35,9 @@
 			<div class="text-sm">About</div>
 		</a>
 		<a href="{base}/tools"
-			class="flex-col justify-center p-1 transition-all duration-200"
+			class="flex-col justify-center p-1 transition-all duration-200 hover:scale-105"
 			class:activePageDark={$page.url.pathname.endsWith("tools/") && $modeCurrent == false}
 			class:activePageLight={$page.url.pathname.endsWith("tools/") && $modeCurrent == true}
-			on:mouseenter={() => {toolsOnHover = true}}
-			on:mouseleave={() => {toolsOnHover = false}}
-			class:scale-105={toolsOnHover}
 		>
 			<div class="flex justify-center">
 				<span class="i-tabler-hammer w-6 h-6"></span>
@@ -54,12 +45,9 @@
 			<div class="text-sm">Tools</div>
 		</a>
 		<a href="{base}/links"
-			class="flex-col justify-center p-1 transition-all duration-200"
+			class="flex-col justify-center p-1 transition-all duration-200 hover:scale-105"
 			class:activePageDark={$page.url.pathname.endsWith("links/") && $modeCurrent == false}
 			class:activePageLight={$page.url.pathname.endsWith("links/") && $modeCurrent == true}
-			on:mouseenter={() => {linksOnHover = true}}
-			on:mouseleave={() => {linksOnHover = false}}
-			class:scale-105={linksOnHover}
 		>
 			<div class="flex justify-center">
 				<span class="i-lucide-link w-5 h-6"></span>
