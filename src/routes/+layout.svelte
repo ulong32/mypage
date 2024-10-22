@@ -14,7 +14,7 @@
 <svelte:head>
 	<meta property="og:url" content={$page.url.href} />
 </svelte:head>
-<div class="flex flex-col min-h-screen">
+<div class="flex flex-col min-h-screen transition-colors duration-300">
 <AppBar gridColumns="grid-cols-2" slotDefault="place-content-start" slotTrail="place-content-end">
 	<span class="font-semibold text-2xl">
 		<a href="/"

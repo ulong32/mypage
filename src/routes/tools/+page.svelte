@@ -9,6 +9,7 @@
 		{
 			name: 'allb_News',
 			description: 'ラスバレゲーム内お知らせの通知 & アーカイブサービス',
+			badges: ["Python"],
 			links: [
 				{
 					icon: 'i-tabler-brand-twitter w-6 h-6',
@@ -25,6 +26,7 @@
 		{
 			name: 'Shukuchi',
 			description: 'ブラウザ版ラスバレ用のちょっと使いやすいプレイ環境',
+			badges: ["JavaScript", "Electron"],
 			links: [
 				{
 					icon: 'i-tabler-brand-github w-6 h-6',
@@ -36,6 +38,7 @@
 		{
 			name: 'LiliesNote',
 			description: 'アサルトリリィのキャラクターの誕生日をエクスポートできるツール',
+			badges: ["Svelte", "JavaScript"],
 			links: [
 				{
 					icon: 'i-lucide-link w-5 h-5',
@@ -52,6 +55,7 @@
 		{
 			name: 'ワールドダイスター 誕生日ダウンローダー',
 			description: 'ワールドダイスター登場キャラの誕生日をエクスポートできるツール',
+			badges: ["Svelte", "JavaScript"],
 			links: [
 				{
 					icon: 'i-lucide-link w-6 h-6',
@@ -63,6 +67,7 @@
 		{
 			name: "アイプリバースアルバムダウンローダー",
 			description: "アイプリ マイキャラルームのアルバム画像をダウンロードできるツール",
+			badges: ["JavaScript", "Chrome Extension"],
 			links: [
 				{
 					icon: "i-lucide-chrome w-5 h-5",
