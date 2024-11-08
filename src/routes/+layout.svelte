@@ -31,8 +31,8 @@
   {#snippet trail()}
       <a href="{base}/about"
         class="flex-col justify-center p-1 transition-all hover:scale-110"
-        class:activePageDark={$page.url.pathname.endsWith("about/") && $modeCurrent == false}
-        class:activePageLight={$page.url.pathname.endsWith("about/") && $modeCurrent == true}
+        class:activePageDark={$page.url.pathname.endsWith("about/") && $modeCurrent === false}
+        class:activePageLight={$page.url.pathname.endsWith("about/") && $modeCurrent === true}
       >
         <div class="flex justify-center">
           <span class="i-lucide-user-round w-6 h-6"></span>
@@ -41,8 +41,8 @@
       </a>
       <a href="{base}/tools"
         class="flex-col justify-center p-1 transition-all hover:scale-110"
-        class:activePageDark={$page.url.pathname.endsWith("tools/") && $modeCurrent == false}
-        class:activePageLight={$page.url.pathname.endsWith("tools/") && $modeCurrent == true}
+        class:activePageDark={$page.url.pathname.endsWith("tools/") && $modeCurrent === false}
+        class:activePageLight={$page.url.pathname.endsWith("tools/") && $modeCurrent === true}
       >
         <div class="flex justify-center">
           <span class="i-tabler-hammer w-6 h-6"></span>
@@ -51,8 +51,8 @@
       </a>
       <a href="{base}/links"
         class="flex-col justify-center p-1 transition-all hover:scale-110"
-        class:activePageDark={$page.url.pathname.endsWith("links/") && $modeCurrent == false}
-        class:activePageLight={$page.url.pathname.endsWith("links/") && $modeCurrent == true}
+        class:activePageDark={$page.url.pathname.endsWith("links/") && $modeCurrent === false}
+        class:activePageLight={$page.url.pathname.endsWith("links/") && $modeCurrent === true}
       >
         <div class="flex justify-center">
           <span class="i-lucide-link w-5 h-6"></span>

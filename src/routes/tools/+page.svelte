@@ -7,12 +7,12 @@
       badges: ["Twitter Bot", "Python"],
       links: [
         {
-          icon: 'i-tabler-brand-twitter w-6 h-6',
+          icon: 'i-tabler-brand-twitter size-6',
           description: 'Twitterアカウント',
           destination: 'https://twitter.com/allb_news'
         },
         {
-          icon: 'i-lucide-link w-5 h-5',
+          icon: 'i-lucide-link size-5',
           description: 'Webサイト',
           destination: 'https://allb-news.ulong32.net'
         }
@@ -24,7 +24,7 @@
       badges: ["Electron", "JavaScript"],
       links: [
         {
-          icon: 'i-tabler-brand-github w-6 h-6',
+          icon: 'i-tabler-brand-github size-6',
           description: 'GitHubリポジトリ',
           destination: 'https://github.com/ulong32/Shukuchi'
         }
@@ -36,12 +36,12 @@
       badges: ["Svelte", "JavaScript"],
       links: [
         {
-          icon: 'i-lucide-link w-5 h-5',
+          icon: 'i-lucide-link size-5',
           description: 'Webサイト',
           destination: 'https://liliesnote.ulong32.net'
         },
         {
-          icon: 'i-tabler-brand-github w-6 h-6',
+          icon: 'i-tabler-brand-github size-6',
           description: 'GitHubリポジトリ',
           destination: 'https://github.com/ulong32/LiliesNote'
         }
@@ -53,7 +53,7 @@
       badges: ["Svelte", "JavaScript"],
       links: [
         {
-          icon: 'i-lucide-link w-6 h-6',
+          icon: 'i-lucide-link size-5',
           description: 'Webサイト',
           destination: 'https://ulong32.net/wds_bddownloader/'
         }
@@ -65,9 +65,21 @@
       badges: ["Browser Extension", "JavaScript"],
       links: [
         {
-          icon: "i-lucide-chrome w-5 h-5",
+          icon: "i-lucide-chrome size-5",
           description: "Chrome ウェブストア",
           destination: "https://chrome.google.com/webstore/detail/meogmfoncolnmjnkpedhmfbbajmcdfng"
+        }
+      ]
+    },
+    {
+      name: "「聴いている曲をツイート」ショートカット",
+      description: "Musicアプリで現在聴いている曲をツイートするショートカット",
+      badges: ["Apple Shortcut"],
+      links: [
+        {
+          icon: "i-iconoir-apple-shortcuts size-6",
+          description: "ショートカット",
+          destination: "https://www.icloud.com/shortcuts/8f18d730ad1644e5b4818bb5f7e522c7"
         }
       ]
     }
@@ -79,6 +91,7 @@
     "Electron": "i-ion-logo-electron",
     "Svelte": "i-ri-svelte-line",
     "Twitter Bot": "i-tabler-brand-twitter-filled",
+    "Apple Shortcut": "i-iconoir-apple-shortcuts-solid",
   }
 </script>
 
@@ -91,7 +104,7 @@
         <div class="opacity-90">{s.description}</div>
         <div class="text-left mt-3">
           {#each s.badges as badge}
-            <span class="badge variant-soft mx-1">
+            <span class="badge variant-ghost mx-1">
               <span class="{icons[badge]} size-4"></span>
               <span class="!ml-1">{badge}</span>
             </span>
@@ -105,7 +118,7 @@
               <a href={l.destination} target="_blank" class="w-full">
                 <span class={l.icon}></span>
                 <span class="flex-auto text-left">{l.description}</span>
-                <span class="i-tabler-arrow-right w-6 h-6"></span>
+                <span class="i-tabler-arrow-right size-6"></span>
               </a>
             </li>
           {/each}
