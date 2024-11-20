@@ -79,7 +79,7 @@
         {
           icon: "i-iconoir-apple-shortcuts size-6",
           description: "ショートカット",
-          destination: "https://www.icloud.com/shortcuts/8f18d730ad1644e5b4818bb5f7e522c7"
+          destination: "https://www.icloud.com/shortcuts/f6a4342a665445f7baea2828e8c40f91"
         }
       ]
     }
