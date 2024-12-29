@@ -2,7 +2,7 @@
   import Title from '$lib/Title.svelte';
 </script>
 
-<div class="container w-full mx-auto flex-col justify-center items-center">
+<div class="container w-10/12 max-w-screen-md mx-auto flex-col justify-center items-center">
   <Title title="About" description="私について"/>
   <div class="card m-6 p-4">
     <div class="flex-col justify-center">

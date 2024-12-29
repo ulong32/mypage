@@ -4,7 +4,7 @@
   import { AppBar } from '@skeletonlabs/skeleton';
   import { page } from '$app/stores';
   import { base } from '$app/paths';
-  import { fade } from "svelte/transition";
+  import { draw, fade } from "svelte/transition";
   import { modeCurrent } from "@skeletonlabs/skeleton";
   import LightSwitchArea from '$lib/LightSwitchArea.svelte';
   interface Props {
@@ -14,6 +14,9 @@
   let { children }: Props = $props();
 
   let titleOnHover = $state(false);
+  let titleWidth = $state(0);
+  const animationDuration = 200;
+  const titleUnderlineOpacity = 0.9;
 </script>
 
 <svelte:head>
@@ -21,12 +24,20 @@
 </svelte:head>
 <div class="flex flex-col min-h-screen transition-colors duration-300">
 <AppBar gridColumns="grid-cols-2" slotDefault="place-content-start" slotTrail="place-content-end">
-  <span class="font-semibold text-2xl">
+  <div class="font-semibold text-2xl relative">
     <a href="/"
+      class="inline-block"
       onmouseenter={() => {titleOnHover = true}}
       onmouseleave={() => {titleOnHover = false}}
+      bind:clientWidth={titleWidth}
     >ulong32.net</a>
-  </span>
+    {#if titleOnHover}
+      <svg width={titleWidth} height="2" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 left-0 translate-y-0.5">
+        <line x1="0" y1="1" x2={titleWidth} y2="1" stroke-opacity={titleUnderlineOpacity} stroke="currentColor" stroke-width="2" in:draw={{duration:animationDuration}} out:draw={{duration:1}} />
+        <line x1={titleWidth} y1="1" x2=0 y2="1" stroke-opacity={titleUnderlineOpacity} stroke="currentColor" stroke-width="2" out:draw={{duration:animationDuration}} in:draw={{delay:animationDuration, duration:1}}/>
+      </svg>
+    {/if}
+  </div>
 
   {#snippet trail()}
       <a href="{base}/about"
