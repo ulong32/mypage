@@ -82,6 +82,23 @@
           destination: "https://www.icloud.com/shortcuts/f6a4342a665445f7baea2828e8c40f91"
         }
       ]
+    },
+    {
+      name: "microConv",
+      description: "A simple microwave time converter",
+      badges: ["Svelte", "JavaScript"],
+      links: [
+        {
+          icon: "i-lucide-link size-5",
+          description: "Webサイト",
+          destination: "https://ulong32.net/microConv"
+        },
+        {
+          icon: "i-tabler-brand-github size-6",
+          description: "GitHubリポジトリ",
+          destination: "https://gitub.com/ulong32/microConv",
+        }
+      ]
     }
   ];
   const icons: {[key:string]: string} = {
