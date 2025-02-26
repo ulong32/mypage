@@ -39,7 +39,7 @@
           <li>
               <span class="flex-auto text-lg">Contents</span>
               <span class="text-right text-sm">
-                  <div>アサルトリリィ</div>
+                  <div>プリティーシリーズ</div>
               </span>
           </li>
           <hr class="!border-t-2" />
