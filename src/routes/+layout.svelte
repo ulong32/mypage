@@ -32,7 +32,7 @@
       bind:clientWidth={titleWidth}
     >ulong32.net</a>
     {#if titleOnHover}
-      <svg width={titleWidth} height="2" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 left-0 translate-y-0.5">
+      <svg width={titleWidth} height="2" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 left-0 translate-y-0.5 pointer-events-none">
         <line x1="0" y1="1" x2={titleWidth} y2="1" stroke-opacity={titleUnderlineOpacity} stroke="currentColor" stroke-width="2" in:draw={{duration:animationDuration}} out:draw={{duration:1}} />
         <line x1={titleWidth} y1="1" x2=0 y2="1" stroke-opacity={titleUnderlineOpacity} stroke="currentColor" stroke-width="2" out:draw={{duration:animationDuration}} in:draw={{delay:animationDuration, duration:1}}/>
       </svg>
@@ -73,7 +73,7 @@
       {/snippet}
 </AppBar>
   {#key $page.url.pathname}
-    <div class="grow" in:fade={{duration:400}}>
+    <div class="grow mx-auto max-w-screen-md min-w-fit w-10/12" in:fade={{duration:400}}>
       {@render children?.()}
     </div>
   {/key}

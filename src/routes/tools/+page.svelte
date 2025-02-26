@@ -1,5 +1,7 @@
 <script lang="ts">
 	import Title from "$lib/Title.svelte";
+  import { loadDefaultJapaneseParser } from "budoux";
+  const parser = loadDefaultJapaneseParser();
   const services = [
     {
       name: 'allb_News',
@@ -117,8 +119,8 @@
   {#each services as s}
     <div class="text-token card m-4">
       <header class="p-3">
-        <div class="h2 my-2">{s.name}</div>
-        <div class="opacity-90">{s.description}</div>
+        <div class="h2 my-2">{@html parser.translateHTMLString(s.name)}</div>
+        <div class="opacity-90">{@html parser.translateHTMLString(s.description)}</div>
         <div class="text-left mt-3">
           {#each s.badges as badge}
             <span class="badge variant-ghost mx-1">

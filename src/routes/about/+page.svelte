@@ -2,9 +2,9 @@
   import Title from '$lib/Title.svelte';
 </script>
 
-<div class="container w-10/12 max-w-screen-md mx-auto flex-col justify-center items-center">
+<div class="container flex-col justify-center items-center">
   <Title title="About" description="私について"/>
-  <div class="card m-6 p-4">
+  <div class="card p-4 w-full">
     <div class="flex-col justify-center">
       <div class="flex justify-center p-4">
           <img src="/images/icon.png" class="rounded-full aspect-square backdrop-brightness-100 backdrop-blur-sm opacity-90 max-w-60" alt="アイコン" />
